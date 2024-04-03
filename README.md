@@ -10,7 +10,9 @@ Run Project:
 
 2. ``cd front-end``
 
-3. ``npm start``
+3.  ``npm install``
+
+4. ``npm start``
 
 ### Trello Project 3 link:
 
