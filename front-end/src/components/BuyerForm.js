@@ -61,7 +61,6 @@ function BuyerForm() {
           required
           fullWidth
           label="Your Email"
-          autoFocus
           margin="normal"
           value={buyerInfo.email}
           onChange={handleChange}
@@ -72,7 +71,6 @@ function BuyerForm() {
           required
           fullWidth
           label="Interest"
-          autoFocus
           margin="normal"
           value={buyerInfo.interest}
           onChange={handleChange}

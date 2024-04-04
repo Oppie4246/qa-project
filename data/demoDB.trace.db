@@ -1,0 +1,4 @@
+2024-04-04 14:24:15.197747+01:00 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM BUYER\000d\000a[*]SELECT * FROM SELLER"; SQL statement:
+SELECT * FROM BUYER
+SELECT * FROM SELLER [42000-224]
