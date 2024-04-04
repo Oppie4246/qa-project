@@ -1,12 +1,28 @@
 import React from 'react';
+import { Typography, Button, Container, Box, } from '@mui/material';
+import { Link } from 'react-router-dom';
 
-function HomePage() {
+
+const HomePage = () => {
   return (
     <div>
-      <h1>Welcome to Our Estate Agency</h1>
-      <p>Find your dream home today!</p>
+      <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="main">
+        <Container maxWidth="sm">
+          <Typography variant="h2" align="center" color="text.primary" gutterBottom>
+            Find Your Dream Home
+          </Typography>
+          <Typography variant="h5" align="center" color="text.secondary" paragraph>
+            Browse through our listings to find your perfect home.
+          </Typography>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <Button variant="contained" component={Link} to="/listings">
+              Browse Listings
+            </Button>
+          </div>
+        </Container>
+      </Box>
     </div>
   );
-}
+};
 
 export default HomePage;

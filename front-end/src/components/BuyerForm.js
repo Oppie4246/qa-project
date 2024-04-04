@@ -56,23 +56,25 @@ function BuyerForm() {
           onChange={handleChange}
         />
         <TextField
+          autoComplete="email"
+          name="email"
           required
           fullWidth
-          label="Email Address"
-          name="email"
-          autoComplete="email"
+          label="Your Email"
+          autoFocus
           margin="normal"
-          value={buyerInfo.name}
+          value={buyerInfo.email}
           onChange={handleChange}
         />
         <TextField
+          autoComplete="interest"
+          name="interest"
           required
           fullWidth
           label="Interest"
-          name="interest"
-          autoComplete="interest"
+          autoFocus
           margin="normal"
-          value={buyerInfo.name}
+          value={buyerInfo.interest}
           onChange={handleChange}
         />
         <Button
