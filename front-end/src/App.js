@@ -7,6 +7,7 @@ import SellerForm from './components/SellerForm';
 import Navbar from './components/Navbar';
 import BuyersList from './components/BuyersList';
 import SellersList from './components/SellersList';
+import PropertyForm from './components/PropertyForm';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/sellers" element={<SellerForm />} />
           <Route path="/buyerslist" element={<BuyersList />} />
           <Route path="/sellerslist" element={<SellersList />} />
+          <Route path="/properties" element={<PropertyForm />} />
         </Routes>
       </div>
     </Router>
