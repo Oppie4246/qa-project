@@ -21,3 +21,9 @@ https://trello.com/invite/b/iXD1Xy0S/ATTI0251b413fbaccc2912918da9339678b709BC305
 ### Swagger URL Link:
 
 http://localhost:8080/swagger-ui/index.html
+
+## Run docker Image
+
+1. ``cd front-end``
+
+2. ``docker run -p 3000:3000 front-end``
