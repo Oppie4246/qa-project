@@ -1,27 +1,13 @@
-# Use the official Maven image as the base image
-FROM maven:3.8.4-openjdk-17 AS build
-
-# Set the working directory
+# Build Project
+FROM maven:3.8.4-openjdk-17 As build
 WORKDIR /app
+COPY pom.xml .
+COPY src ./src
+RUN mvn clean package
 
-# Copy the pom.xml and any other necessary configuration files
-COPY ./pom.xml /app
-COPY ./src /app/src
-
-# Build the application
-RUN mvn clean package -Dmaven.test.skip=true
-
-# Create a new image for running the application
-FROM openjdk:17-jdk
-
-# Set the working directory
+# Run Application
+FROM openjdk:17-alpine
 WORKDIR /app
-
-# Copy the built JAR file from the previous stage
-COPY --from=build /app/target/*.jar app.jar
-
-# Expose the port on which the Spring Boot application will run
+COPY --from=build /app/target/*.jar ./back-end.jar
 EXPOSE 8080
-
-# Command to run the application
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "back-end.jar"]
