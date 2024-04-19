@@ -1,0 +1,22 @@
+version: '3'
+services:
+
+  spring-boot-app:
+      build:
+        context: ./back-end
+        dockerfile: Dockerfile
+      ports:
+        - "8080:8080"
+      # depends_on:
+      #   - mysql
+      # environment:
+      #   SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/product
+      #   SPRING_DATASOURCE_USERNAME: product_user
+      #   SPRING_DATASOURCE_PASSWORD: product_user_password
+
+  react-app:
+      build:
+        context: ./front-end
+        dockerfile: Dockerfile
+      ports:
+        - "3000:80"
