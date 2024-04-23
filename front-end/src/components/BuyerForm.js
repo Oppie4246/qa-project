@@ -20,7 +20,7 @@ function BuyerForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8080/api/buyers', buyerInfo);
+      const response = await axios.post('http://13.42.150.65:8080/api/buyers', buyerInfo);
       console.log(response.data);
       alert('Submission successful');
       setBuyerInfo({ name: '', email: '', interest: '' });

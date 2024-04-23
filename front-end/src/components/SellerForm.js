@@ -22,7 +22,7 @@ function SellerForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8080/api/sellers', propertyInfo);
+      const response = await axios.post('http://13.42.150.65:8080/api/sellers', propertyInfo);
       console.log(response.data);
       alert('Property submitted successfully');
       // Reset form
