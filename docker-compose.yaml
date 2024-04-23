@@ -1,16 +1,15 @@
 version: '3'
+
 services:
 
-  spring-boot-app:
-      build:
-        context: ./back-end
-        dockerfile: Dockerfile
-      ports:
-        - "8080"
-        
-  react-app:
-      build:
-        context: ./front-end
-        dockerfile: Dockerfile
-      ports:
-        - "3000"
+  backend:
+    image: "oppie2024/back-end:first"
+    container_name: qa-project-back-end
+    ports:
+      - "8080:8080"
+
+  frontend:
+    image: "oppie2024/front-end:first"
+    container_name: qa-project-front-end
+    ports:
+      - "3000:3000"
