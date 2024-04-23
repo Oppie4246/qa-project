@@ -10,7 +10,7 @@ function SellersList() {
 
     const fetchSellers = async () => {
         try {
-            const response = await axios.get('http://localhost:8080/api/sellers');
+            const response = await axios.get('http://13.42.150.65:8080/api/sellers');
             setSellers(response.data);
         } catch (error) {
             console.error("Error fetching sellers:", error);

@@ -22,7 +22,7 @@ const PropertyForm = () => {
         e.preventDefault();
         try {
             // Adjust the URL to match your API endpoint
-            const response = await axios.post('http://localhost:8080/api/properties', property);
+            const response = await axios.post('http://13.42.150.65:8080/api/properties', property);
             console.log(response.data);
             alert('Property added successfully');
             // Optionally reset form or redirect the user
