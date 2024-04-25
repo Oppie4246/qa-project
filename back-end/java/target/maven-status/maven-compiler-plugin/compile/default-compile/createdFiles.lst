@@ -1,0 +1,11 @@
+com\qaproject\backend\model\Seller.class
+com\qaproject\backend\repository\SellerRepository.class
+com\qaproject\backend\controller\SellerController.class
+com\qaproject\backend\repository\BuyerRepository.class
+com\qaproject\backend\config\WebConfig.class
+com\qaproject\backend\config\WebConfig$1.class
+com\qaproject\backend\BackEndApplication.class
+com\qaproject\backend\repository\PropertyRepository.class
+com\qaproject\backend\controller\BuyerController.class
+com\qaproject\backend\model\Buyer.class
+com\qaproject\backend\model\Property.class
