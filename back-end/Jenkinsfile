@@ -7,8 +7,9 @@ pipeline {
     agent any
         stages {   
             stage ('Build Docker Image') {
-            dir('back-end'){
+           
                 steps {
+                    dir('back-end'){
                     script {
                         dockerImage = docker.build(registry)
                     }
