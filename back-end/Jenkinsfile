@@ -1,0 +1,36 @@
+pipeline {
+    environment {
+        registry = "oppie2024/back-end"
+        registryCreditials ="dockerhub_id"
+        dockerImage =""
+    }
+    agent any
+        stages {
+            stage ('Build Docker Image') {
+                steps {
+                    script {
+                        dockerImage = docker.build(registry)
+                    }
+                }
+            }
+            
+            stage ("Push to Docker Hub") {
+                steps {
+                    script {
+                        docker.withRegistry('', registryCreditials) {
+                            dockerImage.push("${env.BUILD_NUMBER}")
+                            dockerImage.push("latest")
+                        }
+                    }
+                }
+            }
+
+            stage("Clean Up") {
+                steps {
+                    script {
+                        sh 'docker image prune --all --force --filter "until=48h"'
+                        }
+                    }
+                }
+            }    
+}
