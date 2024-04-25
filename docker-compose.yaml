@@ -3,14 +3,14 @@ version: '4'
 services:
 
   backend:
-    image: "oppie2024/back-end:first"
+    image: "oppie2024/back-end:latest"
     container_name: qa-project-back-end
     ports:
       - "8080:8080"
     pull_policy: always
 
   frontend:
-    image: "oppie2024/front-end:first"
+    image: "oppie2024/front-end:latest"
     container_name: qa-project-front-end
     ports:
       - "3000:3000"
