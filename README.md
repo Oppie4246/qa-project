@@ -45,3 +45,6 @@ https://trello.com/invite/b/iXD1Xy0S/ATTI0251b413fbaccc2912918da9339678b709BC305
 http://localhost:8080/swagger-ui/index.html
 
 ![Image of AWS architecture structure](https://github.com/Oppie4246/qa-project/commit/798564e3713435a2356a33f44aa920b16935bc3c)
+
+
+![Image of AWS architecture structure future options](https://github.com/Oppie4246/qa-project/blob/9bf404fe89cf4808c33fb07b03de7b614fe0afda/AWS%20future%20option.png)
