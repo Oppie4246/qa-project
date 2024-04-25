@@ -48,7 +48,7 @@ http://localhost:8080/swagger-ui/index.html
 
 ![Image of AWS architecture structure](https://github.com/Oppie4246/qa-project/blob/639053efa5676a2dde686337528a2ef30ea99024/AWS%20architecture.png)
 
-Deploying fronend and backend web application using Docker containers and Docker compose on a single EC2 instance within a VPC offers streamlined and efficent way to manage, deploy and scale the application while ensuring consistency, portablity and secuirty.
+Deploying frontend and backend web application using Docker containers and Docker compose on a single EC2 instance within a VPC offers streamlined and efficent way to manage, deploy and scale the application while ensuring consistency, portablity and secuirty.
 
 ### Advantages:
 
